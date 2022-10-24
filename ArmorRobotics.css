@@ -70,7 +70,7 @@ header {
 /* Dropdowns */
 
 .dropdown {display: inline; position: relative;}
-.dropcaret {font-size: 0.6em; vertical-align: middle; text-decoration: none;}
+.dropcaret {font-size: 0.6em; vertical-align: middle; font-style: normal;}
 
 .navbar {
     height: 1.1em; position: relative;
@@ -89,8 +89,6 @@ header {
     transition: background-color 0.4s linear 0.1s;
 }
 
-.navbar a:hover {background-color: #61309F; text-decoration: underline;}
-
 .dropdown-content {
     position: absolute;
     left: 0px;
@@ -99,13 +97,19 @@ header {
     z-index: 1;
     
     background-color: #31006F;
-    transition: background-color 0.4s linear 0.1s;
+    transition: background-color 0.4s linear 0.1s,
+    opacity 0.4s linear 0.1s;
     width: max-content;
     min-width: 6em;
     visibility: hidden;
+    opacity: 0;
 }
 
 .dropdown-content a {display: block;}
 
+.navbar a:hover {background-color: #61309F; text-decoration: underline;}
 .dropdown:hover span {background-color: #61309F;}
-.dropdown:hover .dropdown-content {visibility: visible; background-color: #61309F;}
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    background-color: #61309F;}
