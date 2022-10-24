@@ -86,7 +86,7 @@ header {
     display: inline-block;
     height: 100%;
     padding: 10px 12px 7px 12px;
-    transition: background-color 0.3s linear;
+    transition: background-color 0.27s linear;
 }
 
 .dropdown-content {
@@ -97,7 +97,7 @@ header {
     z-index: 1;
     
     background-color: #31006F;
-    transition: background-color 0.3s linear, opacity 0.3s linear;
+    transition: background-color 0.27s linear, opacity 0.27s linear;
     width: max-content;
     width: 100%;
     min-width: fit-content;
