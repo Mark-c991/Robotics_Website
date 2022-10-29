@@ -1,4 +1,6 @@
 document.write(`
+    <link rel="stylesheet" href="header.css">
+
     <header>
         <div class="headerimg">
             <img src="images/R_purplegold.png">
