@@ -8,7 +8,7 @@ document.write(`
             <h2>Archbishop Riordan High School</h2>
             
             <div class="navbar">
-                <a href="#">Home</a
+                <a href="index.html">Home</a
                 ><div class="dropdown"
                     ><span>About <i class="dropcaret">&#9660;</i></span
                         ><div class="dropdown-content">
