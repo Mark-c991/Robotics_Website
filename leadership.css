@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Saira Stencil One;
+    src: url(fonts/Saira_Stencil_One/SairaStencilOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Lora;
+    src: url(fonts/Lora/Lora-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(fonts/Myriad_Pro/MyriadPro-Regular.otf) format("opentype");
+}
