@@ -12,6 +12,7 @@
             var tabcontent = document.getElementsByClassName("tab-content");
             for (var i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
+                tabcontent[i].style.opacity = 0;
             }
             
             var tabbuttons = document.querySelectorAll(".tab-selector button");
@@ -20,6 +21,7 @@
             }
             
             document.getElementById(tab).style.display = "block";
+            document.getElementById(tab).style.opacity = 1;
             e.currentTarget.className = "active";
         }
     </script>
@@ -34,10 +36,10 @@
             <button onclick="openTab(event, 'mentors')">Mentors</button>
         </div>
         <div id="student-leaders" class="tab-content">
-            <p>Student Leaders</p>
+            <p style="font-family: 'Myriad Pro'">Student Leaders</p>
         </div>
         <div id="mentors" class="tab-content">
-            <p>Mentors</p>
+            <p style="font-family: 'Myriad Pro'">Mentors</p>
         </div>
     </div>
 </body>
