@@ -17,7 +17,7 @@ document.write(`
                         <a href="leadership.html">Leadership</a>
                         <a href="#">Departments</a>
                         <a href="#">History</a>
-                        <a href="#">Social Media</a
+                        <a href="socials.html">Social Media</a
                     ></div
                 ></div
                 ><div class="dropdown"
