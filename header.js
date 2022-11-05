@@ -9,7 +9,7 @@ document.write(`
             <h1>Armor Robotics 9143</h1>
             <h2>Archbishop Riordan High School</h2>
             
-            <div class="navbar">
+            <nav class="navbar">
                 <a href="/">Home</a
                 ><div class="dropdown"
                     ><span>About <i class="dropcaret">&#9660;</i></span
@@ -36,7 +36,7 @@ document.write(`
                         <a href="#">Volunteer</a
                     ></div
                 ></div>
-            </div>
+            </nav>
         </div>
     </header>
 `);
