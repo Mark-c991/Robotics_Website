@@ -10,20 +10,20 @@ document.write(`
             <h2>Archbishop Riordan High School</h2>
             
             <nav class="navbar">
-                <a href="/">Home</a
+                <a href="index.html">Home</a
                 ><div class="dropdown"
                     ><span>About <i class="dropcaret">&#9660;</i></span
                         ><div class="dropdown-content">
-                        <a href="leadership">Leadership</a>
+                        <a href="leadership.html">Leadership</a>
                         <a href="#">Departments</a>
                         <a href="#">History</a>
-                        <a href="socials">Social Media</a
+                        <a href="socials.html">Social Media</a
                     ></div
                 ></div
                 ><div class="dropdown"
                     ><span>Resources <i class="dropcaret">&#9660;</i></span
                     ><div class="dropdown-content">
-                        <a href="calendar">Calendar</a>
+                        <a href="calendar.html">Calendar</a>
                         <a href="#">Handbook</a>
                         <a href="#">Constitution</a
                     ></div
