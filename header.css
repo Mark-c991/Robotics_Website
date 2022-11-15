@@ -13,104 +13,81 @@
     src: url(fonts/Myriad_Pro/MyriadPro-Regular.otf) format("opentype");
 }
 
-body {margin: 0px;}
-
-header {
-    position: relative;
-    bottom: 5px;
-    height: fit-content;
-    min-height: 130px;
-    background-color: #31006F;
+:root {
+    --riordan_purple: #31006f;
+    --riordan_gold: #f6a500;
 }
 
-.headerimg {
-    display: inline-block;
-    height: 120px;
-    width: 120px;
-    overflow: hidden;
-    margin: 5px;
-    position: relative;
-    top: 5px;
-    z-index: 1;
+.navbar-default {
+    background: var(--riordan_purple);
+    border-bottom: var(--riordan_gold) 3px solid;
 }
 
-.headerimg img {
-    height: 145px;
-    width: 145px;
-    transform: translate(-12.5px, -12.5px);
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
 }
 
-.headertxt {
-    display: inline-block;
-    color: #F5A800;
-    background-color: #31006F;
-    vertical-align: bottom;
-
-    position: relative;
-    bottom: 15px;
-    left: 10px;
+.navbar-default .navbar-nav>li.open>a,
+.navbar-default .navbar-nav>li:hover>a {
+    color: var(--riordan_gold);
 }
 
-.headertxt h1 {
+.dropdown-item:hover {
+    color: var(--riordan_gold);
+    background-color: #61309F;
+}
+
+.dropdown-divider {
+    border-color: var(--riordan_gold);
+}
+
+.dropdown-menu {
+    background-color: var(--riordan_purple);
+}
+
+.dropdown-item {
+    background-color: var(--riordan_purple);
+    color: var(--riordan_gold);
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {}
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.headert1 {
     font-family: 'Saira Stencil One';
     font-size: 2.7em;
-    margin: 0;
+    margin-left: 0px;
+    padding-left: 0px;
+    color: var(--riordan_gold);
 }
 
-.headertxt h2 {
+.headert2 {
     font-family: 'Lora';
     font-size: 1.5em;
     margin: 0;
-    
-    position: relative;
+
     bottom: 10px;
+    color: var(--riordan_gold);
 }
 
-
-/* Dropdowns */
-
-.dropdown {display: inline; position: relative;}
-.dropcaret {font-size: 0.6em; vertical-align: middle; font-style: normal;}
-
-.navbar {
-    height: 1.1em; position: relative;
-    /* navbar a vertical padding - headertxt bottom positioning */
-    bottom: 2px;
-}
-.navbar a, .dropdown span {
-    color: #F5A800;
-    text-decoration: none;
-    font-family: 'Myriad Pro';
-    font-size: 1.1em;
-    
-    display: inline-block;
-    height: 100%;
-    padding: 10px 12px 7px 12px;
-    transition: background-color 0.25s linear;
+.navbar-brand {
+    padding-right: 0px !important;
+    margin-right: 0px !important;
 }
 
-.dropdown-content {
-    position: absolute;
-    left: 0px;
-    /* difference between navbar a top padding and bottom padding + font height */
-    top: calc(3px + 1.1em);
-    z-index: 1;
-    
-    background-color: #31006F;
-    transition: background-color 0.25s linear, opacity 0.25s linear;
-    width: max-content;
-    width: 100%;
-    min-width: fit-content;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.dropdown-content a {display: block;}
-
-.navbar a:hover {background-color: #61309F; text-decoration: underline;}
-.dropdown:hover span {background-color: #61309F;}
-.dropdown:hover .dropdown-content {
-    visibility: visible;
-    opacity: 1;
-    background-color: #61309F;
+.ml-auto {
+    padding-right: 35px;
 }

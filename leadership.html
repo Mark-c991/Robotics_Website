@@ -6,39 +6,135 @@
     <link rel="stylesheet" href="leadership.css">
     <link rel="icon" href="images/R_blank.png">
 
-    <script>    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="style.css">
+    <script>
         function openTab(e, tab) {
             var tabcontent = document.getElementsByClassName("tab-content");
             for (var i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
                 tabcontent[i].style.opacity = 0;
             }
-            
+
             var tabbuttons = document.querySelectorAll(".tab-selector button");
             for (var i = 0; i < tabbuttons.length; i++) {
                 tabbuttons[i].className = "";
             }
-            
+
             document.getElementById(tab).style.display = "block";
             document.getElementById(tab).style.opacity = 1;
             e.currentTarget.className = "active";
         }
     </script>
+
 </head>
 
 <body>
-    <script src="header.js"></script>
+    <div class="main-body">
+        <script src="header.js"></script>
 
-    <div class="tab-menu">
-        <div class="tab-selector" id="start">
-            <button onclick="openTab(event, 'student-leaders')" class="active">Student Leaders</button>
-            <button onclick="openTab(event, 'mentors')">Mentors</button>
-        </div>
-        <div id="student-leaders" class="tab-content">
-            <p>Student Leaders Info</p>
-        </div>
-        <div id="mentors" class="tab-content">
-            <p>Mentors Info</p>
+        <div class="tab-menu">
+            <div class="tab-selector" id="start">
+                <button onclick="openTab(event, 'student-leaders')" class="active">Student Leaders</button>
+                <button onclick="openTab(event, 'mentors')">Mentors</button>
+            </div>
+            <div id="student-leaders" class="tab-content">
+                <section class="bg-light-blue pt-5 pb-5" id="leadership">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card mb-3">
+                                            <img class="card-img-top" src="images/placeholde_person.jpg" alt="John Doe">
+                                            <div class="card-body py-3">
+                                                <h5 class="mb-0">Name</h5>
+                                                <span>Role</span>
+                                            </div>
+                                            <div class="card-footer pt-0 border-top-0">
+                                                <a href="#" class="text-link">email@email.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card mb-3">
+                                            <img class="card-img-top" src="images/placeholde_person.jpg"
+                                                alt="Noel Flantier">
+                                            <div class="card-body py-3">
+                                                <h5 class="mb-0">Name</h5>
+                                                <span>Role</span>
+                                            </div>
+                                            <div class="card-footer pt-0 border-top-0">
+                                                <a href="#" class="text-link">email@email.com </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card mb-3">
+                                            <img class="card-img-top" src="images/placeholde_person.jpg"
+                                                alt="Jamie Doe">
+                                            <div class="card-body py-3">
+                                                <h5 class="mb-0">Name</h5>
+                                                <span>Role</span>
+                                            </div>
+                                            <div class="card-footer pt-0 border-top-0">
+                                                <a href="#" class="text-link">email@email.com </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="mentors" class="tab-content">
+                <section class="bg-light-blue pt-5 pb-5" id="leadership">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card mb-3">
+                                            <img class="card-img-top" src="images/placeholde_person.jpg"
+                                                alt="Noel Flantier">
+                                            <div class="card-body py-3">
+                                                <h5 class="mb-0">Name Mentor 1</h5>
+                                                <span>Mentor</span>
+                                            </div>
+                                            <div class="card-footer pt-0 border-top-0">
+                                                <a href="#" class="text-link">email@email.com </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card mb-3">
+                                            <img class="card-img-top" src="images/placeholde_person.jpg"
+                                                alt="Jamie Doe">
+                                            <div class="card-body py-3">
+                                                <h5 class="mb-0">Name Mentor 2</h5>
+                                                <span>Mentor</span>
+                                            </div>
+                                            <div class="card-footer pt-0 border-top-0">
+                                                <a href="#" class="text-link">email@email.com </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 </body>

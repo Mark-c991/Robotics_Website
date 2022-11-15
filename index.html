@@ -8,18 +8,16 @@
     <title>Armor Robotics</title>
     <link rel="icon" href="images/R_blank.png">
 
-    <!-- Bootstrap setup
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 
 </head>
 
@@ -29,50 +27,73 @@
     <link rel="stylesheet" href="header.css">
 
     <header>
-        <div class="headerimg">
-            <img src="images/R_purplegold.png">
-        </div
-        ><div class="headertxt">
-            <h1>Armor Robotics 9143</h1>
-            <h2>Archbishop Riordan High School</h2>
-            
-            <nav class="navbar">
-                <a href="index.html">Home</a
-                ><div class="dropdown"
-                    ><span>About <i class="dropcaret">&#9660;</i></span
-                        ><div class="dropdown-content">
-                        <a href="leadership.html">Leadership</a>
-                        <a href="#">Departments</a>
-                        <a href="#">History</a>
-                        <a href="socials.html">Social Media</a
-                    ></div
-                ></div
-                ><div class="dropdown"
-                    ><span>Resources <i class="dropcaret">&#9660;</i></span
-                    ><div class="dropdown-content">
-                        <a href="calendar.html">Calendar</a>
-                        <a href="#">Handbook</a>
-                        <a href="#">Constitution</a
-                    ></div
-                ></div
-                ><a href="#">Sponsors</a
-                ><div class="dropdown"
-                    ><span>Support Us <i class="dropcaret">&#9660;</i></span
-                    ><div class="dropdown-content">
-                        <a href="#">Donate</a>
-                        <a href="#">Volunteer</a
-                    ></div
-                ></div>
-            </nav>
-        </div>
+        <nav class=" navbar navbar-expand-lg navbar-default
+        fixed-top py-lg-0 ">
+
+            <a class="navbar-brand" href="index.html">
+
+                <!-- Add logo with size of 90*80 -->
+                <img src="images/R_purplegold.png" width="90" height="90" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul>
+                <h1 class="headert1">Armor Robotics 9143</h1>
+                <h2 class="headert2">Archbishop Riordan High School</h2>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="leadership.html">Leadership</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Departments</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">History</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Social Media</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Calendar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Handbook</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Constitution</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sponsors
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Support Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Donate</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Volunteer</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <p style="margin:0;">
-        1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>
-        14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>
-        25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>
-        36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>
-        25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>
-        36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>
     </p>
 </body>
