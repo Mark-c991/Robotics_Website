@@ -20,13 +20,13 @@
     <script>
         function openTab(e, tab) {
             var tabcontent = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabcontent.length; i++) {
+            for (let i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
                 tabcontent[i].style.opacity = 0;
             }
 
             var tabbuttons = document.querySelectorAll(".tab-selector button");
-            for (var i = 0; i < tabbuttons.length; i++) {
+            for (let i = 0; i < tabbuttons.length; i++) {
                 tabbuttons[i].className = "";
             }
 
