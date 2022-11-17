@@ -18,8 +18,7 @@
     --riordan_gold: #f6a500;
 }
 
-body,
-html {
+html, body {
     margin: 0;
     height: 100%;
 }
