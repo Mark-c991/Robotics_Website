@@ -2,13 +2,103 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <title>Calendar - Armor Robotics</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/R_blank.png">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script src="header.js"></script>
-    
-    <p style="margin:0;">Calendar</p>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-default
+        fixed-top py-lg-0">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="90" height="90" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul>
+                <h1 class="headert1">Armor Robotics 9143</h1>
+                <h2 class="headert2">Archbishop Riordan High School</h2>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="leadership.html">Leadership</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Departments</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">History</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="">Social Media</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="calendar.html">Calendar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Handbook</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Constitution</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Support Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Donate</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Volunteer</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Members
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Check In/Out</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Member Access</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-body">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showTabs=1&showCalendars=0&showTz=0&showDate=1&showPrint=0&src=cm9ib3RpY3NAcmlvcmRhbmhzLm9yZw&color=%238E24AA"
+            style="border-width:0; margin:0 auto; display:block" width="800" height="600" frameborder="0" scrolling="no">
+            </iframe>
+    </div>
 </body>
